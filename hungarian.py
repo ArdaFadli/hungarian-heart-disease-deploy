@@ -1,11 +1,12 @@
-import pickle
+import joblib
 import streamlit as st
 import time
 import pandas as pd
 
 
 # MODEL
-model = pickle.load("model/knn.pkl")
+with open("knn.pkl", "rb") as f:
+    model = pickle.load(f)
 
 # STREAMLIT APP
 st.set_page_config(page_title="Hungarian Heart Disease Classification", page_icon=":pencil2:")
