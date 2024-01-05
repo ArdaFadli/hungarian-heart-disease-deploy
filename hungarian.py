@@ -91,7 +91,7 @@ with tab1:
 with tab2:
   st.header("Predict multiple data:")
   
-  st.download_button(label="**Download CSV Template**", data=pd.read_csv("data/template.csv").to_csv(index=False), file_name="template.csv", mime="text/csv", help="Click here to download the CSV template.")
+  st.download_button(label="**Download CSV Template**", data=pd.read_csv("data/hungarian.csv").to_csv(index=False), file_name="hungarian.csv", mime="text/csv", help="Click here to download the CSV template.")
 
   st.write("")
   uploaded_file = st.file_uploader(label="Upload a CSV file to predict heart disease", type=["csv"])
