@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # MODEL
-model = pickle.load("model/knn.joblib")
+model = pickle.load("model/knn.pkl")
 
 # STREAMLIT APP
 st.set_page_config(page_title="Hungarian Heart Disease Classification", page_icon=":pencil2:")
