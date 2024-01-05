@@ -5,7 +5,7 @@ import pandas as pd
 
 
 # MODEL
-with open("knn.pkl", "rb") as f:
+with open("model/knn.pkl", "rb") as f:
     model = pickle.load(f)
 
 # STREAMLIT APP
